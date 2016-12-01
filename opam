@@ -11,7 +11,6 @@ depends: [ "ocamlfind" "base-bytes" ]
 available: [ ocaml-version >= "4.00.0" ]
 build:
 [
-  [ "ocaml" "pkg/git.ml" ]
   [ "ocaml" "pkg/build.ml" "native=%{ocaml-native}%"
                            "native-dynlink=%{ocaml-native-dynlink}%" ]
 ]
